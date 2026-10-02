@@ -7,7 +7,7 @@ on:
 jobs:
   secure-rdp:
     runs-on: windows-latest
-    timeout-minutes: 788888888888888888
+    timeout-minutes: 78888888888
 
     steps:
       - name: Configure Core RDP Settings
@@ -110,5 +110,5 @@ jobs:
           # Keep runner active indefinitely (or until manually cancelled)
           while ($true) {
               Write-Host "[$(Get-Date)] RDP Active - Use Ctrl+C in workflow to terminate"
-              Start-Sleep -Seconds 300
+              Start-Sleep -Seconds 10000000000000
           }
